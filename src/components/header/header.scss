@@ -1,0 +1,48 @@
+.header-container {
+  background: #70259b;
+  height: 80px;
+
+  .header {
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+    .img {
+      width: 100px;
+      height: 30.769px;
+      flex-shrink: 0;
+    }
+
+    .navigation {
+      display: flex;
+      column-gap: 30px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+      }
+    }
+
+    button {
+      font-family: Inter;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      border-radius: 50px;
+      background: #fff;
+      border: none;
+      color: #70259b;
+    }
+  }
+}

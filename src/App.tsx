@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './components/header/header';
+import {Routes, Route} from 'react-router-dom';
+import Services from './components/services/services';
+import Industries from './components/industries/industries';
+import Cases from './components/cases/cases';
+import Contact from './components/contact/contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* Displaying the header on evry page of the website */}
+    <Header />
+
+    {/* Creating routes */}
+    <Routes>
+      <Route path="/Services" element={<Services/>}/>
+      <Route path="/Industries" element={<Industries/>}/>
+      <Route path="/Cases" element={<Cases/>}/>
+      <Route path="/Contact" element={<Contact/>}/>
+    </Routes>
+     
+    </>
   );
 }
 

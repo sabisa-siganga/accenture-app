@@ -3,7 +3,7 @@ import './cases.scss';
 
 const Cases = () => {
   return (
-    <div>Cases</div>
+    <div id='cases'>Cases</div>
   )
 }
 

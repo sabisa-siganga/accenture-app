@@ -3,7 +3,7 @@ import './industries.scss';
 
 function Industries() {
   return (
-    <div>Industries</div>
+    <div id='industries'>Industries</div>
   )
 }
 

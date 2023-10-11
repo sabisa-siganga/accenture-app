@@ -1,11 +1,16 @@
 import React from 'react';
 import './title.scss';
 
-const Title = () => {
+interface Props{
+title:string
+}
+
+const Title = (props:Props) => {
+    const {title} = props
   return (
     <div className="title">
     <div className='rectangle'></div>
-    <h5>What we do</h5>
+    <h5>{title}</h5>
     </div>
   )
 }

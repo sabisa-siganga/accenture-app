@@ -1,13 +1,13 @@
 import React from 'react'
 import './serviceItem.scss';
 
-interface props{
+interface Props{
     image: string;
     title: string;
     description: string
 }
 
-function ServiceItem(props:props) {
+function ServiceItem(props:Props) {
     const {image, title, description} = props
   return (
     <div className="service-item  col-sm-12 col-md-6 col-lg-3">

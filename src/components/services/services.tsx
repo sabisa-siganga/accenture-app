@@ -38,7 +38,7 @@ const Services = () => {
     ]
   return (
     <div id='services' className='services-container'>
-        <Title/>
+        <Title title="What we do"/>
         <h1>We offer a complete range of bespoke design and development services to help you turn your ideas into digital masterpieces</h1>
        <div className='row'>
            {  serviceItems.map((item, index)=>{

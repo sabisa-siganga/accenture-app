@@ -1,7 +1,7 @@
 import React from 'react'
 import './industries.scss';
 
-function Industries() {
+const Industries = () => {
   return (
     <div id='industries'>Industries</div>
   )

@@ -1,0 +1,23 @@
+// styling the services' section title
+.title {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  // styling the rectangle
+  .rectangle {
+    width: 40px;
+    height: 4px;
+    background: #d100c9;
+  }
+
+  // styling the heading
+  h5 {
+    margin: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: #000;
+  }
+}

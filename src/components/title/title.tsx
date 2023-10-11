@@ -1,7 +1,7 @@
 import React from 'react';
 import './title.scss';
 
-function Title() {
+const Title = () => {
   return (
     <div className="title">
     <div className='rectangle'></div>

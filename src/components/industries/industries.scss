@@ -1,0 +1,23 @@
+.industries-container {
+  padding: 72px 75px;
+
+  h1 {
+    padding-top: 30px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    color: #242424;
+    margin: 0;
+  }
+  .brands-container {
+    padding-top: 87px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    img {
+      width: 100%;
+      height: 120px;
+      object-fit: scale-down;
+    }
+  }
+}

@@ -1,6 +1,8 @@
+// styling the services container
 .services-container {
   padding: 84px 75px;
 
+  // styling the service section sub-heading
   h1 {
     padding-top: 46px;
     font-size: 48px;
@@ -9,14 +11,19 @@
     line-height: 140%;
     color: #000;
   }
+
+  // styling the row on service section
   .row {
     padding-top: 54px;
   }
 
+  // styling the images
   img {
     width: 64px;
     height: 64px;
   }
+
+  // styling the heading
   h6 {
     padding-top: 52px;
     font-size: 24px;
@@ -27,6 +34,8 @@
     height: 110px;
     margin: 0;
   }
+
+  // styling the description
   p {
     padding-top: 53px;
     font-size: 20px;

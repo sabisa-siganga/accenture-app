@@ -13,7 +13,7 @@ interface CaseStudies {
 const Cases = () => {
   const [caseList, setCaseList] = useState<CaseStudies[]>([]);
 
-  // Fetching cases using the async await function
+  // Fetching study cases  using the async await function
   async function fetchCaseStudies() {
     const response = await fetch(
       " https://zm6zxgq6hyhe3smi5krzsrk2fu0iidhh.lambda-url.us-east-1.on.aws"
@@ -30,7 +30,7 @@ const Cases = () => {
     fetchCaseStudies();
   }, []);
 
-  // Slider setting
+  // Slider settings
   const settings = {
     dots: false,
     infinite: true,

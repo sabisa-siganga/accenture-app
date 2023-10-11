@@ -1,12 +1,21 @@
+// importing react slick for sliding the case studies
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+// styling the case studies container
 .cases-container {
   padding: 0 75px;
 
+  // stying the rectangle
+  .rectangle {
+    margin-bottom: 10px;
+  }
+
+  // styling of the sliders container
   .sliders-container {
     padding-top: 57px;
 
+    // styling of the slider
     .slick-track {
       display: flex;
       column-gap: 41px;

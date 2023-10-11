@@ -1,6 +1,13 @@
+// styling of the industries container
 .industries-container {
   padding: 72px 75px;
 
+  // styling of the rectangle
+  .rectangle {
+    margin-bottom: 10px;
+  }
+
+  // styling of the heading
   h1 {
     padding-top: 30px;
     font-size: 48px;
@@ -10,10 +17,13 @@
     color: #242424;
     margin: 0;
   }
+  // styling of the brands container
   .brands-container {
     padding-top: 87px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+
+    //  styling of the brand images
     img {
       width: 100%;
       height: 120px;

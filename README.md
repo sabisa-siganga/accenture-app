@@ -11,7 +11,7 @@ This is a landing page I designed for brands, implemented with React.
 - **Maintainable Styling:** I've used SASS to keep the styling of the landing page maintainable, organized, and easy to update.
 
 - **React Slick Slider:** To showcase case studies and responsiveness, I integrated React Slick. It's simple to set up and offers powerful settings for responsive design.
-
+  g
 - **React Router for Page Routing:** I've incorporated React Router for efficient and dynamic page routing within the application.
 
 - **Reusable Components:** I've created a set of reusable components to enhance code maintainability and reusability throughout the project.

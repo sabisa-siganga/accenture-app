@@ -103,4 +103,25 @@
       margin-bottom: 35px;
     }
   }
+
+  @media only screen and (max-width: 650px) {
+    padding-left: 20px;
+
+    .left-container {
+      margin-bottom: 38px;
+
+      .links-container {
+        row-gap: 20px;
+        flex-direction: column;
+      }
+    }
+
+    .right-container {
+      padding-left: 0;
+
+      address {
+        margin-bottom: 50px;
+      }
+    }
+  }
 }

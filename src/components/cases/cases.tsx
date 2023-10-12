@@ -45,6 +45,20 @@ const Cases = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   return (

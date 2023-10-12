@@ -48,4 +48,17 @@
     font-weight: 700;
     line-height: 150%;
   }
+  /* Extra small devices (phones, 650px and down) */
+  @media only screen and (max-width: 650px) {
+    h1 {
+      padding-top: 218px;
+    }
+    h1,
+    p {
+      padding-left: 20px;
+    }
+    button {
+      margin-left: 20px;
+    }
+  }
 }

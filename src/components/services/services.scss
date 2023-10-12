@@ -44,4 +44,8 @@
     line-height: 150%;
     color: #000;
   }
+
+  @media only screen and (max-width: 650px) {
+    padding: 84px 20px;
+  }
 }

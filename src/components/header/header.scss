@@ -1,7 +1,14 @@
+.header-placeholder {
+  height: 80px;
+}
+
 // adding style on header container
 .header-container {
   background: #70259b;
   height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 
   // styling the header
   .header {
@@ -18,36 +25,102 @@
       height: 30.769px;
       flex-shrink: 0;
     }
+  }
 
-    // styling the nav bar
-    .navigation {
-      display: flex;
-      column-gap: 30px;
+  .navbar-toggler {
+    border-radius: 3px;
+    border-color: #afafaf;
+    height: 35px;
+    width: 35px;
+  }
 
-      // styling the links on the nav bar
-      a {
-        color: #fff;
-        text-decoration: none;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%;
-      }
-    }
+  .navbar-collapse,
+  .navbar-toggler {
+    display: none;
+  }
 
-    // styling the let's talk button
-    button {
-      padding: 8px 16px;
+  .show-navbar {
+    display: block;
+  }
+
+  // styling the nav bar
+  .navigation {
+    display: flex;
+    column-gap: 30px;
+
+    // styling the links on the nav bar
+    a {
+      color: #fff;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
       font-size: 14px;
       font-style: normal;
       font-weight: 700;
       line-height: 150%;
-      border-radius: 50px;
-      background: #fff;
-      border: none;
-      color: #70259b;
+    }
+  }
+
+  // styling the let's talk button
+  .lets-talk {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border-radius: 50px;
+    background: #fff;
+    border: none;
+    color: #70259b;
+  }
+
+  .navbar-collapse {
+    padding: 15px;
+    background: #fff;
+
+    .navigation {
+      flex-direction: column;
+      row-gap: 10px;
+      margin-bottom: 12px;
+    }
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media (max-width: 650px) {
+    height: auto;
+    background: transparent;
+
+    .header {
+      background: #70259b;
+      height: 80px;
+      max-width: 100%;
+      padding: 0 15px;
+
+      .navigation,
+      .lets-talk {
+        display: none;
+      }
+    }
+
+    .navigation {
+      a {
+        color: #70259b;
+      }
+    }
+
+    .lets-talk {
+      background: #70259b;
+      color: #fff;
+    }
+
+    .navbar-toggler {
+      display: block;
+    }
+  }
+
+  @media (min-width: 651px) {
+    .navbar-collapse {
+      display: none;
     }
   }
 }

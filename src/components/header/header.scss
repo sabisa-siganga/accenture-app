@@ -1,7 +1,9 @@
+// adding style on header container
 .header-container {
   background: #70259b;
   height: 80px;
 
+  // styling the header
   .header {
     display: flex;
     max-width: 90%;
@@ -10,15 +12,19 @@
     height: 100%;
     align-items: center;
 
+    // styling the icon
     .img {
       width: 100px;
       height: 30.769px;
       flex-shrink: 0;
     }
 
+    // styling the nav bar
     .navigation {
       display: flex;
       column-gap: 30px;
+
+      // styling the links on the nav bar
       a {
         color: #fff;
         text-decoration: none;
@@ -31,6 +37,7 @@
       }
     }
 
+    // styling the let's talk button
     button {
       padding: 8px 16px;
       font-size: 14px;

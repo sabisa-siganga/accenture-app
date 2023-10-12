@@ -2,6 +2,9 @@ import React from "react";
 import "./contact.scss";
 import Title from "../title/title";
 
+/**
+ * Displaying the contact details of the company
+ */
 const Contact = () => {
   return (
     <div id="contact" className="contact-container">

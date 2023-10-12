@@ -10,10 +10,16 @@ interface CaseStudies {
   description: string;
 }
 
+/**
+ * Displaying the case studies
+ */
 const Cases = () => {
+  // state that stores the list of case studies
   const [caseList, setCaseList] = useState<CaseStudies[]>([]);
 
-  // Fetching study cases  using the async await function
+  /**
+   * Fetching case studies from an api
+   */
   async function fetchCaseStudies() {
     const response = await fetch(
       " https://zm6zxgq6hyhe3smi5krzsrk2fu0iidhh.lambda-url.us-east-1.on.aws"
@@ -21,11 +27,13 @@ const Cases = () => {
     // converting response to JSON object
     const results = await response.json();
 
-    // Accessing case studies
+    // Updating the state with the results from the api
     setCaseList(results);
   }
 
-  //   on component mount
+  /**
+   *  Fetching case studies on component mount
+   */
   useEffect(() => {
     fetchCaseStudies();
   }, []);
@@ -44,6 +52,7 @@ const Cases = () => {
       <Title title="Case studies" />
 
       <div className="sliders-container">
+        {/* displaying the case studies as a slider */}
         <Slider {...settings}>
           {caseList.map((caseItem, index) => {
             return (

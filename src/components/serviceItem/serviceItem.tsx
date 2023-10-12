@@ -1,21 +1,24 @@
-import React from 'react'
-import './serviceItem.scss';
+import React from "react";
 
-interface Props{
-    image: string;
-    title: string;
-    description: string
+interface Props {
+  image: string;
+  title: string;
+  description: string;
 }
 
-function ServiceItem(props:Props) {
-    const {image, title, description} = props
+/**
+ * Reusable component that represents service item
+ */
+const ServiceItem = (props: Props) => {
+  // props desctructuring
+  const { image, title, description } = props;
   return (
     <div className="service-item  col-sm-12 col-md-6 col-lg-3">
-    <img src={image} alt="webDevIcon" />
-    <h6>{title}</h6>
-    <p>{description}</p>
-</div>
-  )
-}
+      <img src={image} alt="icon" />
+      <h6>{title}</h6>
+      <p>{description}</p>
+    </div>
+  );
+};
 
-export default ServiceItem
+export default ServiceItem;

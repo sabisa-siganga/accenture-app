@@ -7,7 +7,11 @@ interface Props {
   description: string;
 }
 
+/**
+ * Reusable component that represents individual case study
+ */
 const Slide = (props: Props) => {
+  // props destructuring
   const { image, title, description } = props;
   return (
     <div className="slide-container">

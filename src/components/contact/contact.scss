@@ -1,23 +1,28 @@
+// adding style on contact container
 .contact-container {
   background: #430964;
   padding: 71px 0 38px 75px;
 
-  .title {
-    .rectangle {
-      margin-bottom: 10px;
-    }
-    h5 {
-      color: #fff;
-    }
+  // styling the rectangle
+  .rectangle {
+    margin-bottom: 10px;
   }
 
+  // styling heading
+  h5 {
+    color: #fff;
+  }
+
+  //   adding style on row
   .row {
     padding-top: 34px;
   }
 
+  // styling the left container
   .left-container {
     padding-left: 0;
 
+    // styling the heading
     h2 {
       font-size: 40px;
       font-style: normal;
@@ -28,10 +33,12 @@
       margin: 0;
     }
 
+    // adding style on links container
     .links-container {
       padding-top: 108px;
       display: flex;
 
+      //   adding style on the link items
       ul {
         list-style: none;
         padding: 0;
@@ -40,6 +47,7 @@
         flex-basis: 0;
 
         li {
+          //styling the links
           a {
             font-size: 20px;
             font-style: normal;
@@ -53,6 +61,7 @@
     }
   }
 
+  // styling the right container
   .right-container {
     font-size: 20px;
     font-style: normal;
@@ -60,6 +69,7 @@
     line-height: 150%;
     color: #fff;
 
+    // styling the address of the company
     address {
       color: #fff;
       font-size: 20px;
@@ -68,6 +78,7 @@
       line-height: 150%;
       margin-bottom: 97px;
 
+      // styling the email address
       a {
         color: #fff;
         font-size: 20px;
@@ -78,6 +89,7 @@
       }
     }
 
+    // styling of the heading and description
     h6,
     p {
       font-size: 20px;
@@ -86,7 +98,7 @@
       line-height: 150%;
       margin-bottom: 0;
     }
-
+    // styling of the heading
     h6 {
       margin-bottom: 35px;
     }

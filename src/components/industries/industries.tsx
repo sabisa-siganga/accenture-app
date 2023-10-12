@@ -17,7 +17,11 @@ import sanlam from "../../assets/sanlam.svg";
 import santam from "../../assets/santam.svg";
 import bbc from "../../assets/bbc.svg";
 
+/**
+ *  Displaying the industries section
+ */
 const Industries = () => {
+  // list of brands
   const brands = [
     visa,
     tymebank,

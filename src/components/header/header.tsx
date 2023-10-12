@@ -9,6 +9,9 @@ import NavContent from "./nav-content";
 const Header = () => {
   const [collapseNav, setCollapseNav] = useState(true);
 
+  /**
+   * toggling collapseNav state
+   */
   const toggleMobileNavBar = () => {
     setCollapseNav((currentState) => {
       return !currentState;
@@ -23,6 +26,8 @@ const Header = () => {
 
           {/* navbar links */}
           <NavContent />
+
+          {/*mobile navbar button  */}
           <button
             className="navbar-toggler navbar-dark"
             type="button"
@@ -33,6 +38,7 @@ const Header = () => {
           </button>
         </div>
 
+        {/* show mobile navbar when collapseNav is false */}
         <div className={`navbar-collapse ${collapseNav ? "" : "show-navbar"}`}>
           <NavContent />
         </div>

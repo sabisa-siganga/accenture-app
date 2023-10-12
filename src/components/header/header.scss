@@ -85,7 +85,7 @@
     }
   }
 
-  /* Extra small devices (phones, 600px and down) */
+  /*adding style for responsiveness on extra small devices (phones, 650px and downward) */
   @media (max-width: 650px) {
     height: auto;
     background: transparent;
@@ -118,6 +118,7 @@
     }
   }
 
+  /*adding style for responsiveness on medium devices (phones, 651px and upward) */
   @media (min-width: 651px) {
     .navbar-collapse {
       display: none;

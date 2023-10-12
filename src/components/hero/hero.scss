@@ -48,7 +48,8 @@
     font-weight: 700;
     line-height: 150%;
   }
-  /* Extra small devices (phones, 650px and down) */
+
+  /*adding a breakpoint from 650px and downwards*/
   @media only screen and (max-width: 650px) {
     h1 {
       padding-top: 218px;

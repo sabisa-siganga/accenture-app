@@ -1,4 +1,4 @@
-# Brand Landing Page using React
+# Brands Landing Page using React
 
 This is a landing page I designed for brands, implemented with React.
 
@@ -21,10 +21,12 @@ This is a landing page I designed for brands, implemented with React.
 Feel free to clone this repository and follow these steps to get started:
 
 1. Clone the repository:
-   https://github.com/sabisa-siganga/accenture-app
+   https://github.com/sabisa-siganga/brands-app
 
-2. Install the necessary dependencies:
+2. Navigate to the app;
+
+3. Install the necessary dependencies:
    npm install
 
-3. Run the development server:
+4. Run the development server:
    npm start

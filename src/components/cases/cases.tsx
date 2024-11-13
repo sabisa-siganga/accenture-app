@@ -10,6 +10,29 @@ interface CaseStudies {
   description: string;
 }
 
+// Define the mock data for CaseStudies
+const mockCaseStudies = [
+  {
+    imageUrl:
+      "https://images.unsplash.com/photo-1721332150382-d4114ee27eff?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Case Study 1",
+    description:
+      "An in-depth look at the first case study, showcasing unique solutions.",
+  },
+  {
+    imageUrl:
+      "https://images.unsplash.com/photo-1727160930825-97245483a509?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Case Study 2",
+    description: "Exploring challenges and successes in our second case study.",
+  },
+  {
+    imageUrl:
+      "https://images.unsplash.com/photo-1730669185590-2ed0736948d9?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Case Study 3",
+    description: "Highlights and takeaways from the third case study.",
+  },
+];
+
 /**
  * Displaying the case studies
  */
@@ -17,25 +40,23 @@ const Cases = () => {
   // state that stores the list of case studies
   const [caseList, setCaseList] = useState<CaseStudies[]>([]);
 
-  /**
-   * Fetching case studies from an api
-   */
-  async function fetchCaseStudies() {
-    const response = await fetch(
-      " https://zm6zxgq6hyhe3smi5krzsrk2fu0iidhh.lambda-url.us-east-1.on.aws"
-    );
-    // converting response to JSON object
-    const results = await response.json();
-
-    // Updating the state with the results from the api
-    setCaseList(results);
+  /// Mock function with specified return type
+  async function fetchMockCaseStudies(): Promise<CaseStudies[]> {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(mockCaseStudies);
+      }, 500); // 500ms delay to simulate a real API call
+    });
   }
 
-  /**
-   *  Fetching case studies on component mount
-   */
+  // Usage in component
   useEffect(() => {
-    fetchCaseStudies();
+    const getCaseStudies = async () => {
+      const results = await fetchMockCaseStudies();
+      setCaseList(results as CaseStudies[]); // Type assertion to ensure TypeScript understands the type
+    };
+
+    getCaseStudies();
   }, []);
 
   // Slider settings
